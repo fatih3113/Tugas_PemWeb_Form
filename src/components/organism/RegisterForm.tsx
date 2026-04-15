@@ -2,11 +2,11 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import Input from "../components/Input";
-import PasswordInput from "../components/PasswordInput";
-import Select from "../components/Select";
-import Textarea from "../components/Textarea";
-import Button from "../components/Button";
+import Input from "../atoms/Input";
+import PasswordInput from "../atoms/PasswordInput";
+import Select from "../atoms/Select";
+import Textarea from "../atoms/Textarea";
+import Button from "../atoms/Button";
 
 const schema = z.object({
   name: z.string().min(1, "Nama wajib diisi"),
